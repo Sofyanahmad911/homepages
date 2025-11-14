@@ -1,0 +1,21 @@
+
+        /* Mengatur font utama dan warna latar belakang global */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0905; /* Dark, nearly black for a strong contrast */
+        }
+        /* Style untuk efek latar belakang kopi */
+        .bg-coffee-hero {
+            background-image: url('https://placehold.co/1440x800/2C1F1A/D6A350?text=Kopi+Panas+%26+Biji+Kopi');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        .bg-coffee-beans {
+            background-image: url('https://placehold.co/1440x800/1A110D/D6A350?text=Biji+Kopi+Berjatuhan');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }

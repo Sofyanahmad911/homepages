@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja - Halaman Utama</title>
+    <!-- Memuat Tailwind CSS untuk styling yang cepat dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="text-white">
+
+    <!-- Header & Navigasi -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm p-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider text-amber-500">Kopi Senja</h1>
+            <div class="flex items-center space-x-4">
+                <!-- Search Bar -->
+                <div class="relative hidden sm:block">
+                    <input type="text" placeholder="Cari..." class="bg-gray-800 text-white rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-amber-500 w-48 transition duration-300">
+                    <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <!-- Menu/Burger Icon -->
+                <button class="text-white p-2 rounded-lg hover:bg-amber-600 transition duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian 1: Hero Section (Kopi Panas) -->
+    <section class="bg-coffee-hero flex items-center h-[90vh] md:h-screen">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex items-center w-full h-full">
+            <div class="max-w-lg p-6 md:p-10 bg-black bg-opacity-50 rounded-xl shadow-2xl">
+                <p class="text-2xl md:text-4xl font-light leading-relaxed text-amber-100 text-shadow-custom">
+                    "Temukan inspirasi dalam setiap tegukan kopi hangat yang dapat menyemangati harimu."
+                </p>
+                <button class="mt-6 md:mt-8 flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    <span>Pesan Sekarang</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 2: Sticky Note & Biji Kopi Berjatuhan -->
+    <section class="bg-coffee-beans flex items-center h-[70vh] md:h-[60vh] relative">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-6 py-12 flex items-center w-full relative z-10">
+            <!-- Sticky Note Style Card -->
+            <div class="w-64 h-64 bg-yellow-300 text-gray-900 p-6 rounded-xl shadow-2xl transform rotate-[-2deg] flex flex-col justify-center items-center">
+                <svg class="w-6 h-6 text-red-600 mb-2 transform rotate-12" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3" /></svg>
+                <p class="text-center font-serif italic text-xl">
+                    "Temukan Ketenangan Dalam Secangkir Kopi Pilihan Kami."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 3: Info & Menu Kopi -->
+    <section class="py-16 md:py-24 bg-black relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Kolom Kiri: Filosofi dan Gambar Biji Kopi -->
+            <div class="space-y-8">
+                <div class="relative">
+                    <!-- Biji Kopi Estetika -->
+                    <img src="img/image.png" alt="Biji Kopi" class="w-full h-auto rounded-lg shadow-xl opacity-80">
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl border-l-4 border-amber-600">
+                    <p class="text-lg font-light leading-relaxed text-gray-200">
+                        "Menggugah Selera, Segarkan Perjalananmu. Kami terapkan filosofi bahwa kenikmatan sejati lahir dari kualitas biji kopi terbaik, dipetik secara hati-hati, diolah dengan proses terbaik, dan disajikan dengan sepenuh hati."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Daftar Menu dengan Watermark -->
+            <div class="relative p-6 md:p-10 bg-gray-900 rounded-xl shadow-2xl">
+                <!-- Watermark Kopi Besar -->
+                <div class="absolute right-[-10%] bottom-[-5%] opacity-10 hidden lg:block">
+                    <svg width="400" height="400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM10.5 5C10.5 4.171 11.171 3.5 12 3.5C12.829 3.5 13.5 4.171 13.5 5C13.5 5.829 12.829 6.5 12 6.5C11.171 6.5 10.5 5.829 10.5 5ZM12 8C7.582 8 4 11.582 4 16C4 18.5 5.5 20.5 8 21.5V18.5C8 17.12 9.12 16 10.5 16H13.5C14.88 16 16 17.12 16 18.5V21.5C18.5 20.5 20 18.5 20 16C20 11.582 16.418 8 12 8ZM12 10C14.209 10 16 11.791 16 14C16 15.105 15.552 16.095 14.81 16.81C14.07 17.55 13.105 18 12 18C10.895 18 9.93 17.55 9.19 16.81C8.448 16.095 8 15.105 8 14C8 11.791 9.791 10 12 10Z" fill="#D6A350"/>
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-bold mb-6 text-amber-500 border-b pb-2 border-amber-600">
+                    TEMUKAN KEAGUNGAN DALAM PILIHAN MENU
+                </h3>
+                <ul class="space-y-3 text-xl font-light relative z-20">
+                    <li class="flex justify-between"><span>AMERICANO</span><span class="text-amber-300">Rp 25K</span></li>
+                    <li class="flex justify-between"><span>LATTE</span><span class="text-amber-300">Rp 30K</span></li>
+                    <li class="flex justify-between"><span>ESPRESSO</span><span class="text-amber-300">Rp 20K</span></li>
+                    <li class="flex justify-between"><span>KOPI GORENG</span><span class="text-amber-300">Rp 35K</span></li>
+                    <li class="flex justify-between"><span>KOPI SUSU SENJA</span><span class="text-amber-300">Rp 28K</span></li>
+                    <li class="flex justify-between"><span>CAPPUCCINO</span><span class="text-amber-300">Rp 30K</span></li>
+                    <li class="flex justify-between"><span>MATCHA LATTE</span><span class="text-amber-300">Rp 32K</span></li>
+                    <li class="flex justify-between"><span>ES KOPI JELLY</span><span class="text-amber-300">Rp 33K</span></li>
+                    <li class="flex justify-between font-semibold text-amber-500"><span>PAKET NONGKRONG KALEM</span><span class="text-amber-300">Rp 50K</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 4: Lokasi (Simulasi Peta) -->
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-10 text-amber-500">Kunjungi Kami</h2>
+            <div class="bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
+                <!-- Placeholder untuk Peta (Tidak bisa memuat iframe atau peta langsung) -->
+                <div class="relative w-full h-80 md:h-96">
+                    <img src="https://placehold.co/1440x500/003366/ffffff?text=Google+Maps+Simulasi+Lokasi+Kafe" alt="Simulasi Peta Lokasi Kafe" class="w-full h-full object-cover opacity-70">
+                    <!-- Kartu Lokasi di atas Peta -->
+                    <div class="absolute bottom-4 right-4 p-4 bg-white text-gray-900 rounded-lg shadow-xl w-64">
+                        <h4 class="font-bold text-lg">Kopi Senja Pusat</h4>
+                        <p class="text-sm">Jl. Inspirasi No. 45, Jakarta Selatan</p>
+                        <p class="text-xs text-green-600 mt-1">Buka: Senin - Minggu (09:00 - 23:00)</p>
+                        <a href="#" class="text-sm text-amber-600 hover:underline mt-2 inline-block">Lihat Rute</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-lg font-semibold text-gray-400 tracking-widest">HUBUNGI KAMI</p>
+            <p class="text-sm text-gray-500 mt-2">© 2025 Kopi Senja. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js">
+        
+    </script>
+</body>
+</html>
